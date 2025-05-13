@@ -27,7 +27,11 @@ public class NakupniSeznam {
      * Naplní seznam alespoň 4 položkami.
      */
     private void naplnSeznam() {
-        //TODO
+        seznam.add(new Polozka("mleko", 1, "litr"));
+        seznam.add(new Polozka("brambory", 2, "kg"));
+        seznam.add(new Polozka("cervena paprika", 2, "ks"));
+        seznam.add(new Polozka("bageta velka", 1, "ks"));
+        seznam.add(new Polozka("vejce", 10, "ks"));
     }
 
     /**
@@ -36,22 +40,21 @@ public class NakupniSeznam {
      * @return
      */
     private Polozka ziskejTretiPolozku() {
-        //TODO
-        return null;
+        return seznam.get(2);
     }
 
     /**
      * Smaže druhou položku ze seznamu.
      */
     private void smazDruhouPolozku() {
-        //TODO
+        seznam.remove(1);
     }
 
     /**
      * Přidá novou položku na konec seznamu.
      */
     private void pridejDalsiPolozku() {
-        //TODO
+        seznam.addLast(new Polozka("salatova okurka", 1, "ks"));
     }
 
     @Override
